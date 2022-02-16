@@ -1,19 +1,18 @@
 import numpy
-# Paths variables
-pathHere = "C:/Users/aless/OneDrive - Università degli Studi di Padova/Documenti/Learn/Sistema/"
-# pathHere = "C:/Users/aless/OneDrive - Università degli Studi di Padova/Documenti/Development/MDtracker/"
-relativePathMonth = "1Journal/2MonthlyLog/"
-relativePathDay = "1Journal/0DailyLog/"
+# Paths variables 
+pathHere = ""                               # YourPath to the Obsidian Vault
+relativePathMonth = "1Journal/2MonthlyLog/" # Your path to mothly note
+relativePathDay = "1Journal/0DailyLog/"     # Your path to daily note
 
 # Months
-MonthNote = "M02-2022"
+MonthNote = "M02-2022" # Name of the monthlynote
 DailyNotes = "2022-"+MonthNote[1:3]+"-"
 gg = ["L", "M", "M", "G", "V", "S", "D"]
 end = 16        #Last day of month
 startDay = 1    #0=L, 1=M, ...
 nHabits = 9
 
-#Delimitatori
+#Delimitators
 sHabit = "## Habits"
 eHabit = "# Night reflections"
 
@@ -30,7 +29,7 @@ with open(pathHere+relativePathMonth+MonthNote+".md","r", encoding="utf-8") as f
 #ora su @exMonth ci sono solo le cose scritte prima di # Trackers
 exMonth = exMonth[:exMonth.find("# Trackers")-1]
 
-
+# Reading daily note 
 for nGiorno in range(1,end+1):
     # Lettura dei file giornalieri
     with open(pathHere+relativePathDay+DailyNotes+str("%02d" % nGiorno)+".md","r", encoding="utf-8") as f:
