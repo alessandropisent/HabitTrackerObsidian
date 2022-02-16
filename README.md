@@ -20,7 +20,7 @@ eHabits           # The next delimitator to habits
 
 ## Examples 
 ### Examples of the dailynote template :
-
+```
 # <% tp.date.now("dddd DD-MM-YY") %>
 ----
 
@@ -65,6 +65,7 @@ eHabits           # The next delimitator to habits
 
 ## Thoughts
 - 
+```
 
 ---
 
