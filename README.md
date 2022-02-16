@@ -14,8 +14,8 @@ startDay          # 0 = Monday, 1 = Tuesday, ... 6 = Sunday
 nHabits           # Number of habits that you are tracking
 
 # Delimitators
-sHabits           # Title of the start of the checklist of habits
-eHabits           # The next delimitator to habits
+sHabits           # Title of the start of the checklist of habits i.e. "## Habits"
+eHabits           # The next delimitator to habits, i.e. "# Night reflections"
 ```
 
 ## Examples 
